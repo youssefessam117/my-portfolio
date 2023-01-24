@@ -16,22 +16,22 @@ export default function Navbar() {
         <img className={style.text} src={textLogo} alt="text" />
       </Link>
       <div className={`${style.nav_button}`}>
-        <NavLink className='py-2' to='/'>
+        <NavLink exact='true' activeclassname={style} to='/'>
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink to='/about'>
+        <NavLink activeclassname={style} className={style.about} to='/about'>
         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink to='/skills'>
+        <NavLink activeclassname={style} className={style.skills} to='/skills'>
         <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
         </NavLink>
-        <NavLink to='/tips'>
+        <NavLink activeclassname={style.active} className={style.tips} to='/tips'>
         <FontAwesomeIcon icon={faLightbulb} color="#4d4d4e" />
         </NavLink>
-        <NavLink to='/mywork'>
+        <NavLink activeclassname={style.active} className={style.mywork} to='/mywork'>
         <FontAwesomeIcon icon={faEye} color="#4d4d4e" />
         </NavLink>
-        <NavLink to='/contact'>
+        <NavLink activeclassname={style.active} className={style.contact} to='/contact'>
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </div>

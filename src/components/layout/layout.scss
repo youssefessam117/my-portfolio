@@ -1,0 +1,37 @@
+.outlet{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    left: 10%;
+
+    .tags{
+        color: #ffd700;
+        opacity: 0.6;
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+    }
+    .top-tags{
+        bottom: auto;
+        top: 35px;
+    }
+    .html{
+        margin-left: -40px;
+    }
+}
+
+.box-container{
+    width: 90%;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    left: 10%;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}

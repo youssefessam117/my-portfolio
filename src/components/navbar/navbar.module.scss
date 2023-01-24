@@ -21,25 +21,87 @@
         }
     }
     .nav_button{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        align-self: stretch;
 
         a{
             font-size: 22px;
+            color: #4d4d4e;
             text-decoration: none;
+            padding: 10px 0px;
+            position: relative;
+            display: block;
+            &:hover{
+                color: #ffd700;
+                svg{
+                    opacity: 0;
+                }
+                &::after{
+                    opacity: 1;
+                }
+            }
+            &::after{
+                content: '';
+                font-size: 10px;
+                position: absolute;
+                opacity: 0;
+                display: block;
+                text-align: center;
+                width: 100%;
+                bottom: 40%;
+                transition: all 0.5s ease-out;
+            }
+            &:first-child{
+                &::after{
+                    content: 'HOME';
+                }
+            }
+            &.about{
+                &::after{
+                    content: 'ABOUT';
+                }
+            }
+            &.skills{
+                &::after{
+                    content: 'SKILLS';
+                }
+            }
+            &.tips{
+                &::after{
+                    content: 'TIPS';
+                }
+            }
+            &.mywork{
+                &::after{
+                    content: 'MYWORK';
+                }
+            }
+            &.contact{
+                &::after{
+                    content: 'CONTACT';
+                }
+            }
         }
-
+        .active{
+            background-color: #ffd700;
+        }
     }
     .social_icon{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px 0px;
         a{
-            font-size: 20px;
+            font-size: 17px;
             text-decoration: none;
+            padding: 10px 0px;
+            transition: all 0.5s ease-out;
+            &:hover{
+                svg{
+                    color: #ffd700;
+                }
+            }
         }
     }
 }
