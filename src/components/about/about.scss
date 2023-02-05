@@ -1,0 +1,55 @@
+.about{
+    .text-zone{
+        position: absolute;
+        left: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30%;
+        max-height: 90%;
+        display: table-cell;
+        line-height: 20px;
+        h1{
+            color: #ffd700;
+            font-size: 63px;
+            font-family: 'Coolvetica';
+            position: relative;
+            margin: 30px 0px;
+            
+            &::before{
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: #ffd700;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+            &::after{
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                bottom: -20px;
+                left: -20px;
+                line-height: 18px;
+                opacity: 0.6;
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 3s;
+        }
+
+    }
+}
+.animat-text-hover{
+    &:hover{
+        color: #fff;
+    }
+}

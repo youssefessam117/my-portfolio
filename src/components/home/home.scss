@@ -10,7 +10,8 @@
             color: #fff;
             font-size: 53px;
             font-family: 'Coolvetica';
-            span{
+            position: relative;
+            y{
                 font-family: 'La Belle Aurore';
                 color: #ffd700;
                 font-size: 40px;
@@ -27,7 +28,7 @@
                 font-size: 18px;
                 position: absolute;
                 margin-top: -40px;
-                left: 15px;
+                left: -15px;
                 opacity: 0.6;
             }
             &::after{
@@ -39,7 +40,7 @@
                 margin-top: 18px;
                 margin-left: 20px;
                 animation: fadeIn 1s 1.7s backwards;
-                opacity: 0.6;
+                opacity: 1.6;
             }
         }
         h2{
