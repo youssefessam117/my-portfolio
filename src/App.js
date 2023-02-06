@@ -1,12 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.scss";
-import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
+import Home from "./components/home/Home";
+import Layout from "./components/layout/Layout";
 import MyWork from "./components/myWork/MyWork";
 import Skills from "./components/skills/Skills";
-import Tips from "./components/tips/Tips";
-import Layout from "./components/layout/Layout";
 
 function App() {
   const routes = createBrowserRouter([
@@ -20,7 +19,6 @@ function App() {
         { path: "contact", element: <Contact /> },
         { path: "mywork", element: <MyWork /> },
         { path: "skills", element: <Skills /> },
-        { path: "tips", element: <Tips /> },
       ],
     },
   ]);

@@ -2,8 +2,6 @@ import   './animation.scss'
 import React from 'react'
 
 export default function AnimationChar({charsArr , charClass,charIndex}) {
-  console.log(charClass)
-  console.log(charsArr)
   return (
     <span>
       {

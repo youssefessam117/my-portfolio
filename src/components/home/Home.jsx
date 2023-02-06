@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import   './home.scss'
+// import Loader from 'react-loaders'
 import AnimationChar from './../animationChar/AnimationChar';
+import './home.scss';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
 
@@ -16,8 +20,9 @@ export default function Home() {
   
   return (
     <>
-    <div className='box-container home'>
-      <div className="text-zone">
+    <div className='box-container home row g-5'>
+      <div className="col-md-6">
+        <div className="text-zone">
         <h1>
           <span className={`${classChar} char_11`}>H</span>
           <span className={`${classChar} char_12`}>i,</span>
@@ -33,7 +38,16 @@ export default function Home() {
         </h2>
         <Link className='contact-button' to='/contact'>CONTACT ME</Link>
       </div>
+      </div>
+      <div className="col-md-6">
+        <ul className='icon-liks'>
+          <li className='linkedin'><a target={`_blank`} href="https://www.linkedin.com/in/youssef-essam-708732226/"> <FontAwesomeIcon icon={faLinkedin}  color="#4d4d4e" /> Linkedin</a></li>
+          <li className='github'><a target={`_blank`}  href="https://github.com/youssefessam117"> <FontAwesomeIcon icon={faGithub}  color="#4d4d4e" /> Github</a></li>
+          <li className='resume'><a target={`_blank`} href="https://drive.google.com/file/d/1NyH8MwSvfsPBDVA89-BW7FjMrf2kkvj9/view?usp=sharing"> <FontAwesomeIcon icon={faFile}  color="#4d4d4e" /> resume</a></li>
+        </ul>
+      </div>
     </div>
+    {/* <Loader type="pacman" /> */}
     </>
   )
 }

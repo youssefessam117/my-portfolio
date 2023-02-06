@@ -1,11 +1,11 @@
 .home{
     .text-zone{
-        position: absolute;
-        left: -10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
+        // position: absolute;
+        // left: -10%;
+        // top: 50%;
+        // transform: translateY(-50%);
+        // width: 100%;
+        // max-height: 90%;
         h1{
             color: #fff;
             font-size: 53px;
@@ -15,9 +15,9 @@
                 font-family: 'La Belle Aurore';
                 color: #ffd700;
                 font-size: 40px;
-                margin-left: 20px;
+                margin-left: 10px;
                 opacity: 0;
-                height: auto;
+                // height: auto;
                 animation: rotateIn 1s linear both;
                 animation-delay:1.4s ;
             }
@@ -61,11 +61,50 @@
             border: 1px solid #ffd700;
             animation: fadeIn 1s 1.8s backwards;
             margin-top: 20px;
-            float: left;
             &:hover{
                 background-color: #ffd700;
                 color: #333;
             }
         }
+    }
+}
+
+.icon-liks{
+    list-style: none;
+    li{
+        animation: fadeInRightBig 1s backwards;
+        margin: 10px 0px;
+        padding: 10px 10px;
+        transition: all 0.5s ease;
+        &:hover{
+            background-color: #ffd700;
+            svg{
+                color: #333;
+            }
+            a{
+                color: #333;
+            }
+        }
+    }
+    .linkedin{
+        animation-delay: 1.3s;
+    }
+    .github{
+        animation-delay: 1.5s;
+    }
+    .resume{
+        animation-delay: 1.8s;
+    }
+    svg{
+        font-size: 30px;
+        color: #ffd700;
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: #ffd700;
+        font-weight: 400;
+        font-size: 25px;
+        font-family: 'Coolvetica';
     }
 }
