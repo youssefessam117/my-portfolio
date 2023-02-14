@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 // import Loader from 'react-loaders'
 import AnimationChar from './../animationChar/AnimationChar';
 import './home.scss';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFile } from '@fortawesome/free-solid-svg-icons';
+// import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
 
@@ -38,11 +38,12 @@ export default function Home() {
         <Link className='contact-button' to='/contact'>CONTACT ME</Link>
       </div>
       <div className="icon-liks">
-        <ul className=''>
+        {/* <ul className=''>
           <li className='linkedin'><a target={`_blank`} href="https://www.linkedin.com/in/youssef-essam-708732226/"> <FontAwesomeIcon icon={faLinkedin}  color="#4d4d4e" /> Linkedin</a></li>
           <li className='github'><a target={`_blank`}  href="https://github.com/youssefessam117"> <FontAwesomeIcon icon={faGithub}  color="#4d4d4e" /> Github</a></li>
           <li className='resume'><a target={`_blank`} href="https://drive.google.com/file/d/1NyH8MwSvfsPBDVA89-BW7FjMrf2kkvj9/view?usp=sharing"> <FontAwesomeIcon icon={faFile}  color="#4d4d4e" /> resume</a></li>
-        </ul>
+        </ul> */}
+        <div>Y</div>
       </div>
     </div>
     </>

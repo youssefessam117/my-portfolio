@@ -75,47 +75,59 @@
 
 .icon-liks{
     position: absolute;
-    right: 19%;
-    top: 250px;
-    width: 30%;
-    overflow: hidden;
-    ul{
-        list-style: none;
-    }
-    li{
-        animation: fadeInRightBig 1s backwards;
-        margin: 10px 0px;
-        padding: 10px 10px;
-        transition: all 0.5s ease;
-        &:hover{
-            background-color: #ffd700;
-            svg{
-                color: #333;
-            }
-            a{
-                color: #333;
-            }
-        }
-    }
-    .linkedin{
-        animation-delay: 1.3s;
-    }
-    .github{
-        animation-delay: 1.5s;
-    }
-    .resume{
-        animation-delay: 1.8s;
-    }
-    svg{
-        font-size: 30px;
-        color: #ffd700;
-        margin-right: 20px;
-    }
-    a{
-        text-decoration: none;
-        color: #ffd700;
-        font-weight: 400;
-        font-size: 25px;
+    right: 10%;
+    top: 50px;
+    width: 40%;
+    text-align: center;
+    animation: zoomInDown 0.5s forwards linear;
+    animation-delay: 1s;
+    
+    // background-color: #333;
+    div{
+        font-size: 450px;
         font-family: 'Coolvetica';
+        color: #ffd700;
+        transform: rotateZ(30deg);
+        width: 50%;
+        // background-color: #8d8d8d;
     }
+    // ul{
+    //     list-style: none;
+    // }
+    // li{
+    //     animation: fadeInRightBig 1s backwards;
+    //     margin: 10px 0px;
+    //     padding: 10px 10px;
+    //     transition: all 0.5s ease;
+    //     &:hover{
+    //         background-color: #ffd700;
+    //         svg{
+    //             color: #333;
+    //         }
+    //         a{
+    //             color: #333;
+    //         }
+    //     }
+    // }
+    // .linkedin{
+    //     animation-delay: 1.3s;
+    // }
+    // .github{
+    //     animation-delay: 1.5s;
+    // }
+    // .resume{
+    //     animation-delay: 1.8s;
+    // }
+    // svg{
+    //     font-size: 30px;
+    //     color: #ffd700;
+    //     margin-right: 20px;
+    // }
+    // a{
+    //     text-decoration: none;
+    //     color: #ffd700;
+    //     font-weight: 400;
+    //     font-size: 25px;
+    //     font-family: 'Coolvetica';
+    // }
 }
