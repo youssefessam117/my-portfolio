@@ -1,13 +1,12 @@
-.about{
+.about-comp{
     .text-zone{
-        // position: absolute;
-        // left: -10%;
-        // top: 50%;
-        // transform: translateY(-50%);
-        // max-height: 90%;
         display: flex;
         flex-direction: column;
         line-height: 20px;
+        position: absolute;
+        top: 190px;
+        left: 10%;
+        width: 30%;
         h1{
             color: #ffd700;
             font-size: 63px;
@@ -57,11 +56,14 @@
 
 .box-cup{
     // width: 50%;
-    // top: 0;
+    top: 300px;
     // padding-top: 18%;
     // margin-left: 0;
-    // position: absolute;
-    // right: 0;
+    position: absolute;
+    right: 30%;
+    animation: jackInTheBox 1s forwards;
+    animation-delay: 1s;
+
 }
 .box-spinner{
     animation-name: spinCupe;

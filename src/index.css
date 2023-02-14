@@ -3,8 +3,6 @@ body {
   font-family: 'Helvetica Neue',sans-serif;
   color: #444;
   background-color: #022c43;
-  overflow: hidden;
-  display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

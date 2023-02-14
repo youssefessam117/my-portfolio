@@ -17,8 +17,7 @@ export default function About() {
   
   return (
     <>
-    <div className='box-container about row gx-5'>
-    <div className="col-md-5">
+    <div className='box-container about-comp'>
     <div className="text-zone">
       <h1>
       <AnimationChar charIndex={15} charsArr={aboutArr} charClass={classChar}/>
@@ -31,9 +30,7 @@ export default function About() {
         I'm quietly confident, naturally curious, and perpetually working onimproving my chops one design problem at a time.
       </p>
       </div>
-      </div>
-      <div className="col-md-6">
-      <div className="box-cup">
+        <div className="box-cup">
         <div className="box-spinner">
           <div className="face1">
             <FontAwesomeIcon icon={faReact} color='#5ed4f4' />
@@ -54,8 +51,8 @@ export default function About() {
             <FontAwesomeIcon icon={faNodeJs} color='forestgreen' />
           </div>
         </div>
-      </div>
-      </div>
+      </div> 
+      
     </div>
     {/* <Loader type="pacman" /> */}
    </>

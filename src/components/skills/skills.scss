@@ -1,0 +1,103 @@
+.skills{
+    .text-zone{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        position: absolute;
+        top: 190px;
+        left: 10%;
+        width: 30%;
+        h1{
+            color: #ffd700;
+            font-size: 63px;
+            font-family: 'Coolvetica';
+            position: relative;
+            margin: 30px 0px;
+            
+            &::before{
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: #ffd700;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+            &::after{
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                bottom: -20px;
+                left: -20px;
+                line-height: 18px;
+                opacity: 0.6;
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 3s;
+            .tech-tag{
+                color: #ffd700;
+            }
+            a{
+                text-decoration: none;
+                color: #ffd700;
+            }
+        }
+
+    }
+    .skills-chart{
+        width: 40%;
+        position: absolute;
+        right: 90px;
+        top: 250px;
+        animation: jackInTheBox 1s forwards;
+        animation-delay: 1s;
+        .skill{
+            box-sizing: border-box;
+            margin: 20px 0px;
+            width: 70%;
+            .chart-progres{
+                width: 100%;
+                height: 15px;
+                background-color: #181818;
+                border-radius: 48px;
+                .content-bar{
+                    width: 90%;
+                    background-color: rgb(255, 215, 0);
+                    height: 95%;
+                    border-radius: 48px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    box-sizing: border-box;   
+                    animation: JS 0.5s backwards linear;
+                    animation-delay: 2s;                  
+                    span{
+                    color: #181818;
+                    font-family: 'Coolvetica';
+                    font-size: medium;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes JS {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}

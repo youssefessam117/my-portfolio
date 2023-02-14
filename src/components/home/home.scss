@@ -1,16 +1,20 @@
 .home{
+    // background-color: aqua;
     .text-zone{
-        // position: absolute;
-        // left: -10%;
-        // top: 50%;
+        position: absolute;
+        left: 8%;
+        top: 250px;
         // transform: translateY(-50%);
-        // width: 100%;
+        width: 50%;
         // max-height: 90%;
+        // background-color: bisque;
+        
         h1{
             color: #fff;
-            font-size: 53px;
+            font-size: 54px;
             font-family: 'Coolvetica';
             position: relative;
+            font-weight: 400;
             y{
                 font-family: 'La Belle Aurore';
                 color: #ffd700;
@@ -70,7 +74,14 @@
 }
 
 .icon-liks{
-    list-style: none;
+    position: absolute;
+    right: 19%;
+    top: 250px;
+    width: 30%;
+    overflow: hidden;
+    ul{
+        list-style: none;
+    }
     li{
         animation: fadeInRightBig 1s backwards;
         margin: 10px 0px;

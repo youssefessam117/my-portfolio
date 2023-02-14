@@ -17,14 +17,3 @@ $primary-color : #ffd700;
 input,textarea{
   font-family: 'Helvetica Neue';
 }
-
-.loader-active {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: fadeOut 1s 1s forwards;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
