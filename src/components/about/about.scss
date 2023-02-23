@@ -38,11 +38,12 @@
         }
         p{
             color: #fff;
-            font-size: 13px;
+            font-size: 15px;
             font-family: sans-serif;
-            font-weight: 300;
+            font-weight: 500;
             min-width: fit-content;
             animation: pulse 3s;
+            line-height: 25px;
         }
 
     }
@@ -124,5 +125,24 @@
     }
     83%{
         transform: rotatex(-90deg);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-comp{
+        .text-zone{
+            width: 100%;
+            position: static;
+            padding: 10%;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+        .box-cup{
+            position: static;
+            background-color: burlywood;
+            .box-spinner{
+                background-color: burlywood;
+            }
+        }
     }
 }

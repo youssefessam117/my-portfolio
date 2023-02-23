@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 // import Loader from 'react-loaders'
 import AnimationChar from './../animationChar/AnimationChar';
 import './home.scss';
@@ -35,7 +34,7 @@ export default function Home() {
         <h2>
         Front End Developer / JavaScript Expert / Freelancer 
         </h2>
-        <Link className='contact-button' to='/contact'>CONTACT ME</Link>
+        <a target={`_blank`} href="https://drive.google.com/file/d/1NyH8MwSvfsPBDVA89-BW7FjMrf2kkvj9/view?usp=sharing" className='contact-button' >MY RESUME</a>
       </div>
       <div className="icon-liks">
         {/* <ul className=''>

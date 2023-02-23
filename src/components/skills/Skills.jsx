@@ -23,6 +23,7 @@ export default function Skills() {
             <span className="tech-tag">JavaScript</span>,
             <span className="tech-tag">jQuery</span>,
             <span className="tech-tag">React</span>,
+            <br />
             <span className="tech-tag">TypeScript</span>,
             <span className="tech-tag">Bootstrap</span>,
             <span className="tech-tag">Sass</span>,

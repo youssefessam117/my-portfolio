@@ -101,3 +101,21 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .skills{
+        .text-zone{
+            position: static;
+            width: 100%;
+            padding: 10%;
+        }
+        .skills-chart{
+            position: static;
+            width: 100%;
+            // background-color: bisque;
+            .skill{
+                margin: 20px auto;
+            }
+        }
+    }
+}

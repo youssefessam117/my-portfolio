@@ -8,6 +8,15 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    z-index: 3333;
+    .bars-icon{
+        display: none;
+        // color: #fff;
+        transition: all 0.3s ease-out;
+        &:hover{
+            color: #ffd700;
+        }
+    }
     .name{
         text-decoration: none;
         color: #ffd700;
@@ -21,23 +30,15 @@
     .nav_button{
         // display: flex;
         // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
         // gap: 50px;
 
         a{
             font-size: 22px;
             color: #4d4d4e;
             text-decoration: none;
-            margin: 5px 0px;
+            margin: 40px 0px;
             position: relative;
-            width: 50px;
-            height: 50px;
             display: block;
-            width: 100%;
-            // justify-content: center;
-            // align-items: center;
-            // display: flex;
             text-align: center;
             svg{
                 transition: all 0.5s ease-out;
@@ -117,6 +118,48 @@
                 svg{
                     color: #ffd700;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sideBar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 1px 20px;
+        .bars-icon{
+            display: inline;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .mobile-nav{
+            opacity: 1 !important;
+            left: 0 !important;
+        }
+        .nav_button{
+            position: absolute;
+            display: flex;
+            top: 100%;
+            width: 100%;
+            left: 100%;
+            padding: 10px 0px;
+            background-color: #181818;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            a{
+                margin: 0px 20px;
+                width: 100%;
+            }
+        }
+        .social_icon{
+            flex-direction: row;
+            a{
+                font-size: 20px;
             }
         }
     }

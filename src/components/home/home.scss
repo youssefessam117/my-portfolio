@@ -15,6 +15,7 @@
             font-family: 'Coolvetica';
             position: relative;
             font-weight: 400;
+            line-height: 50px;
             y{
                 font-family: 'La Belle Aurore';
                 color: #ffd700;
@@ -49,7 +50,7 @@
         }
         h2{
             color: #8d8d8d;
-            margin: 20px 0;
+            margin: 30px 0;
             font-size: 11px;
             font-family: sans-serif;
             letter-spacing: 3px;
@@ -130,4 +131,40 @@
     //     font-size: 25px;
     //     font-family: 'Coolvetica';
     // }
+}
+
+
+@media screen and (max-width: 992px) {
+    .home{
+        // margin-top: 50px !important;
+        box-sizing: border-box;
+        padding: 13% 20px;
+        .text-zone{
+            margin-top: 30px !important;
+            position: static;
+            width: 100%;
+            h1{
+                width: 100%;
+                &::before{
+                    margin-top: -30px;
+                    left: 0px;
+                }
+                &::after{
+                    top: 95%;
+                    left: 0px;
+                    margin: 0;
+                }
+
+            }
+        }
+        .icon-liks{
+            position: static;
+            width: 100%;
+            div{
+                font-size: 250px;
+                width: 50%;
+                margin: auto;
+            }
+        }
+    }
 }

@@ -1,16 +1,19 @@
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEye, faGear, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faEye, faGear, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './navbar.scss'
 
 export default function Navbar() {
+  const [showNAv, setshowNAv] = useState(false);
   return (
     <>
     <div className='sideBar'>
+    
     <NavLink className='name' to='/'> youssef</NavLink>
-      <div className='nav_button'>
+      <div className={`nav_button ${showNAv?'mobile-nav': ''}`}>
         <NavLink exact='true' activeclassname='active' to='/'>
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -35,6 +38,7 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faInstagram}  color="#4d4d4e" />
         </a>
       </div>
+      <FontAwesomeIcon style={showNAv?{color:'#ffd700'}:''} onClick={!showNAv?() => setshowNAv(true):() => setshowNAv(false)} className='bars-icon' icon={faBars} color="#4d4d4e" />
     </div>
     </>
   )

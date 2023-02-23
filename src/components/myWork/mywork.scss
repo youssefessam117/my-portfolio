@@ -1,5 +1,5 @@
 .MyWork{
-    background-color: #6a6a6a !important;
+    // background-color: #6a6a6a !important;
     .text-zone{
         position: absolute;
         top: 40px;
@@ -12,7 +12,6 @@
             position: relative;
             width: 100%;
             margin: 30px auto;
-            
             
             &::before{
                 content: '<h1>';
@@ -40,9 +39,10 @@
         .projects-container{
             animation: fadeInUpBig 1s forwards;
             animation-delay: 1s;
-            max-height: 75vh;
+            max-height: 73vh;
             overflow: auto;
             box-sizing: border-box;
+            // background-color: bisque;
             &::-webkit-scrollbar{
                 width: 7px;
             }
@@ -66,7 +66,7 @@
             }
                 .project-item{
                     margin: 40px auto;
-                    width: 40%;
+                    width: 80%;
                     // padding: 20px 10px;
                     // background-color: rgba(25,25,25, 0.5);
                     // text-align: center;
@@ -106,7 +106,7 @@
                     .img-box{
                         position: relative;
                         overflow: hidden;
-                        height: 500px;
+                        // height: 500px;
                         border-radius: 0 0 10px 10px ;
                         box-shadow: 20px 20px 0px rgb(0 0 0 / 15%);
                         img{
@@ -149,6 +149,34 @@
                         }
                     }
                 }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .MyWork{
+        padding-top: 5%;
+        .text-zone{
+            position: static;
+            box-sizing: border-box;
+            padding: 2% 10px;
+            width: 100%;
+            margin-top: 30px !important;
+            h1{
+                // background-color: brown !important;
+            }
+            // background-color: cadetblue;
+            .projects-container{
+                width: 100% !important;
+                max-height: auto;
+                
+                .project-item{
+                    width: 100%;
+                    .img-box{
+                        height: 250px;
+                    }
+                }
+            }
         }
     }
 }
