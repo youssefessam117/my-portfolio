@@ -1,5 +1,3 @@
-import gsap from 'gsap-trial';
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
 import React, { useEffect, useRef, useState } from 'react';
 import yLogo from '../../assets/images/Asset 1.png';
 import AnimationChar from './../animationChar/AnimationChar';
@@ -17,26 +15,6 @@ export default function Home() {
     setTimeout(()=>{
       setclassChar('animat-text-hover')
     },4000)
-  }, [])
-  let gsapTime = gsap.timeline();
-  useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin)
-    gsapTime.to(box.current,{
-      duration:1,
-      opacity:1,
-    })
-    gsapTime.from(logo.current,{
-      drawSVG:0,
-      duration:30
-    })
-    gsap.fromTo(solidLogo.current,{
-      opacity:0,
-    },
-    {
-      opacity:1,
-      delay:4,
-      duration:4,
-    })
   }, [])
   
   return (

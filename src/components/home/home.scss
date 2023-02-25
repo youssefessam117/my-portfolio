@@ -85,8 +85,8 @@
     width: 30%;
     height: 609px;
     // background-color: #8d8d8d;
+    animation: fadeInDownBig 1s 1s backwards;
     z-index: 0;
-    opacity: 0;
     .logo-img{
         position: absolute;
         top: auto;
@@ -95,10 +95,10 @@
         bottom: auto;
         margin: auto;
         width: 100%;
-        opacity: 0;
         z-index: 3;
         transform: rotateZ(-10deg);
         // background-color: bisque;
+        animation: fadeIn 2s 2s backwards;
 
     }
     svg{
