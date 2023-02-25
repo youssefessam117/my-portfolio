@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AnimationChar from './../animationChar/AnimationChar';
-import   './skills.scss';
+import './skills.scss';
 
 export default function Skills() {
   const [classChar, setclassChar] = useState('animat-text');
@@ -11,6 +11,7 @@ export default function Skills() {
     },4000)
   }, [])
   return (
+    <>
     <div className="box-container skills">
        <div className="text-zone">
       <h1>
@@ -86,5 +87,7 @@ export default function Skills() {
       </div>
       </div>
     </div>
+    
+    </>
   )
 }

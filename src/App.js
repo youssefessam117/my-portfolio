@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.scss";
 import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
 import Layout from "./components/layout/Layout";
 import MyWork from "./components/myWork/MyWork";
@@ -16,7 +15,6 @@ function App() {
         { index: true, element: <Home /> },
         { path: "home", element: <Home /> },
         { path: "about", element: <About /> },
-        { path: "contact", element: <Contact /> },
         { path: "mywork", element: <MyWork /> },
         { path: "skills", element: <Skills /> },
       ],

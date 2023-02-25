@@ -1,6 +1,6 @@
 .sideBar{
     background: #181818;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 60px;
     height: 100%;
@@ -132,6 +132,7 @@
         align-items: center;
         flex-direction: row;
         padding: 1px 20px;
+        position: fixed;
         .bars-icon{
             display: inline;
             font-size: 30px;

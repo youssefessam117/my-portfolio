@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import AnimationChar from './../animationChar/AnimationChar';
-import   './mywork.scss';
-import moviePic from '../../assets/images/movie.png' ;
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from 'react';
+import DANIELS from '../../assets/images/blog.png';
+import bookmarker from '../../assets/images/bookmarker.png';
+import defolio from '../../assets/images/defolio.png';
+import moviePic from '../../assets/images/movie.png';
+import qute from '../../assets/images/qute.png';
 import weatherPic from '../../assets/images/weather.png';
 import yummy from '../../assets/images/yummy.png';
-import bookmarker from '../../assets/images/bookmarker.png';
-import DANIELS from '../../assets/images/blog.png';
-import qute from '../../assets/images/qute.png';
-import defolio from '../../assets/images/defolio.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import AnimationChar from './../animationChar/AnimationChar';
+import './mywork.scss';
 
 export default function MyWork() {
   const [classChar, setclassChar] = useState('animat-text');

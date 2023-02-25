@@ -16,15 +16,17 @@
             position: relative;
             font-weight: 400;
             line-height: 50px;
-            y{
-                font-family: 'La Belle Aurore';
-                color: #ffd700;
-                font-size: 40px;
-                margin-left: 10px;
+            img{
                 opacity: 0;
-                // height: auto;
                 animation: rotateIn 1s linear both;
                 animation-delay:1.4s ;
+                width: 35px;
+                margin-left: 10px;
+                transform: rotateZ(-30deg) ;
+                height: auto;
+                &:hover{
+                    transform: rotateZ(-30deg) !important;
+                }
             }
             &::before{
                 content: '<h1>';
@@ -76,61 +78,39 @@
 
 .icon-liks{
     position: absolute;
-    right: 10%;
-    top: 50px;
-    width: 40%;
-    text-align: center;
-    animation: zoomInDown 0.5s forwards linear;
-    animation-delay: 1s;
-    
-    // background-color: #333;
-    div{
-        font-size: 450px;
-        font-family: 'Coolvetica';
-        color: #ffd700;
-        transform: rotateZ(30deg);
-        width: 50%;
-        // background-color: #8d8d8d;
+    right: 15%;
+    top: 100px; 
+    bottom: 0;
+    left: auto;
+    width: 30%;
+    height: 609px;
+    // background-color: #8d8d8d;
+    z-index: 0;
+    opacity: 0;
+    .logo-img{
+        position: absolute;
+        top: auto;
+        right: auto;
+        left: 0;
+        bottom: auto;
+        margin: auto;
+        width: 100%;
+        opacity: 0;
+        z-index: 3;
+        transform: rotateZ(-10deg);
+        // background-color: bisque;
+
     }
-    // ul{
-    //     list-style: none;
-    // }
-    // li{
-    //     animation: fadeInRightBig 1s backwards;
-    //     margin: 10px 0px;
-    //     padding: 10px 10px;
-    //     transition: all 0.5s ease;
-    //     &:hover{
-    //         background-color: #ffd700;
-    //         svg{
-    //             color: #333;
-    //         }
-    //         a{
-    //             color: #333;
-    //         }
-    //     }
-    // }
-    // .linkedin{
-    //     animation-delay: 1.3s;
-    // }
-    // .github{
-    //     animation-delay: 1.5s;
-    // }
-    // .resume{
-    //     animation-delay: 1.8s;
-    // }
-    // svg{
-    //     font-size: 30px;
-    //     color: #ffd700;
-    //     margin-right: 20px;
-    // }
-    // a{
-    //     text-decoration: none;
-    //     color: #ffd700;
-    //     font-weight: 400;
-    //     font-size: 25px;
-    //     font-family: 'Coolvetica';
-    // }
+    svg{
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        transform: rotateZ(-10deg);
+    }
+    .svg-strok{
+        stroke-width: 5px;
+        stroke: #ffd700;
+    }
 }
 
 
@@ -158,12 +138,26 @@
             }
         }
         .icon-liks{
-            position: static;
-            width: 100%;
-            div{
-                font-size: 250px;
-                width: 50%;
-                margin: auto;
+            top: 30%;
+            z-index: -10;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .home{
+        .icon-liks{
+            position: relative;
+            width: 70%;
+            // background-color: #8d8d8d;
+            margin-left: 30px;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            max-height: 400px;
+            .logo-img{
+                // background-color: bisque;
+
             }
         }
     }

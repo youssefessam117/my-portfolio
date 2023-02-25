@@ -2,7 +2,6 @@ import { faCss3, faGitAlt, faHtml5, faJs, faNodeJs, faReact } from '@fortawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import AnimationChar from './../animationChar/AnimationChar';
-// import Loader from 'react-loaders'
 import './about.scss';
 
 export default function About() {
@@ -54,7 +53,6 @@ export default function About() {
       </div> 
       
     </div>
-    {/* <Loader type="pacman" /> */}
    </>
   )
 }

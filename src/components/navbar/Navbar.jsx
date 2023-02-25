@@ -38,7 +38,7 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faInstagram}  color="#4d4d4e" />
         </a>
       </div>
-      <FontAwesomeIcon style={showNAv?{color:'#ffd700'}:''} onClick={!showNAv?() => setshowNAv(true):() => setshowNAv(false)} className='bars-icon' icon={faBars} color="#4d4d4e" />
+      <FontAwesomeIcon style={showNAv?{color:'#ffd700'}:{color:'#4d4d4e'}} onClick={!showNAv?() => setshowNAv(true):() => setshowNAv(false)} className='bars-icon' icon={faBars} color="#4d4d4e" />
     </div>
     </>
   )
