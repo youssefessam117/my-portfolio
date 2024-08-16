@@ -42,7 +42,7 @@ export default function Skills() {
             />
           </h1>
           <p>
-            Expert in front-end development including technologies like.
+            Expert in front-end development including technologies like
             <span className="tech-tag">HTML5</span>,
             <span className="tech-tag">CSS3</span>,
             <span className="tech-tag">JavaScript</span>,
