@@ -23,10 +23,10 @@ export default function About() {
       </h1>
 
       <p>
-        I’m very ambitious front-end developer looking for a role in established IT company with the opportunity to work with the latesttechnologies on challenging and diverse projects. 
+        I’m a very ambitious FullStack developer looking for a role in an established IT company with the opportunity to work with the latest technologies on challenging and diverse projects. 
       </p>
       <p>
-        I'm quietly confident, naturally curious, and perpetually working onimproving my chops one design problem at a time.
+        I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
       </p>
       </div>
         <div className="box-cup">
