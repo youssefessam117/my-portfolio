@@ -32,7 +32,7 @@ export default function Home() {
           <AnimationChar charIndex={22} charsArr={jobArr} charClass={classChar}/>
         </h1>
         <h2>
-        Front End Developer / JavaScript Expert / Freelancer 
+        FullStack Developer ASP.NET / JavaScript Expert / Freelancer 
         </h2>
         <a target={`_blank`} href="https://drive.google.com/file/d/1NyH8MwSvfsPBDVA89-BW7FjMrf2kkvj9/view?usp=sharing" className='contact-button' >MY RESUME</a>
       </div>
